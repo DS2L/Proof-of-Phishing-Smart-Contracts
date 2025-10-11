@@ -1,7 +1,7 @@
 # Overview
 
 This repository contains verification snapshots for **phishing contracts** that were observed performing **simulation-transaction attacks**.  
-Each phishing contract has its own folder under `MAINNET_unflagged_GAS/`, named exactly by the contract address. Inside each contract folder there is a `tx_history` file which documents representative transaction verification traces (two example traces per file).
+Each phishing contract has its own folder under `MAINNET_unflagged_GAS/`, named exactly by the contract address. Inside each contract folder there is a `tx_history` file which documents representative the testing result of phisshing contracts.
 
 ---
 
@@ -19,7 +19,7 @@ MAINNET_unflagged_GAS/
 ## `tx_history` file format
 
 Each `tx_history` file contains two example hashes (called `hash1` and `hash2` in this dataset).  
-Each hash section lists the sequence of smart-contract-level state messages (SM) observed in the trace.
+Each hash section lists the sequence of smart-contract-level state messages (SM) observed in the verification.
 
 ### Example
 
@@ -56,10 +56,10 @@ SM Address: 0x000037bb05b2cef17c6469f4bcdb198826ce0000, caller:0x00000732774d210
 ---
 ## Meaning of `hash1` and `hash2`
 
-- **`hash1`** — Represents the result of a transaction execution.
-  In this trace, the contract returns the user’s transferred funds and even adds `10000 wei` extra back to the user.
+- **`hash1`** — Represents the result of a testing transaction execution.
+  In this testing transaction, the contract returns the user’s transferred funds and adds `10000 wei` extra back to the user.
 
-- **`hash2`** — Represents the result of another transaction execution .  
+- **`hash2`** — Represents the result of another testing transaction execution .  
   In this case, the user’s funds are sent to another address controlled by the attacker.
 
 For the same phishing contract, changing certain fields ("GAS") results in **two different outcomes**:
