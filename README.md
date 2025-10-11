@@ -1,6 +1,6 @@
 # Overview
 
-This repository contains transaction-history snapshots for **phishing contracts** that were observed performing **simulation-transaction attacks**.  
+This repository contains verification snapshots for **phishing contracts** that were observed performing **simulation-transaction attacks**.  
 Each phishing contract has its own folder under `MAINNET_unflagged_GAS/`, named exactly by the contract address. Inside each contract folder there is a `tx_history` file which documents representative transaction traces (two example traces per file).
 
 ---
