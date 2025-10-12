@@ -1,0 +1,18 @@
+hash1
+
+SM Address: 0x2e40c473bcc483b386096fcb91c259f1c4e375fc, caller:0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266,target:0x2e40c473bcc483b386096fcb91c259f1c4e375fc is_static:false, transfer:Transfer(600000000000000), input_size:0
+
+SM Address: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266, caller:0x2e40c473bcc483b386096fcb91c259f1c4e375fc,target:0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266 is_static:false, transfer:Transfer(600000000000000), input_size:0
+
+SM Address: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266, caller:0x2e40c473bcc483b386096fcb91c259f1c4e375fc,target:0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266 is_static:false, transfer:Transfer(10000), input_size:0
+
+
+hash2
+
+SM Address: 0x2e40c473bcc483b386096fcb91c259f1c4e375fc, caller:0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266,target:0x2e40c473bcc483b386096fcb91c259f1c4e375fc is_static:false, transfer:Transfer(600000000000000), input_size:0
+
+SM Address: 0x0000e23abdc862a1911d77904e77fdb378d00000, caller:0x2e40c473bcc483b386096fcb91c259f1c4e375fc,target:0x0000e23abdc862a1911d77904e77fdb378d00000 is_static:false, transfer:Transfer(0), input_size:4
+
+SM Address: 0x000037bb05b2cef17c6469f4bcdb198826ce0000, caller:0x2e40c473bcc483b386096fcb91c259f1c4e375fc,target:0x000037bb05b2cef17c6469f4bcdb198826ce0000 is_static:false, transfer:Transfer(600000000000000), input_size:0
+
+

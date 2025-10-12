@@ -1,0 +1,36 @@
+0x2c02d36a9fdeac5c8919d48a1a7daa2b22af9557 0x0a3b0a4f00000000000000000000000075aaaFfD9EAA33a86d36b6Bd6c6b41C4eE868D69
+('0xd9c3f729d505b2322c7018b3fd32350143b484bad3a748fd6e20c15ff99e0573', '0xa414313ba848f17314d248278fbf3bfd58d057e2718338cb7757507b8d623851', '0x0cd197136980d6e5e640f3c22d7c2f838ac74dc9c99e5327829249e70de15783')
+Executing previous transactions from the block.
+Traces:
+  [9263] 0x2C02D36a9fDeaC5c8919D48a1a7DAA2B22af9557::fallback{value: 600000000000000}()
+    ├─ [0] 0x75aaaFfD9EAA33a86d36b6Bd6c6b41C4eE868D69::fallback{value: 600000000000001}()
+    │   └─ ← [OutOfFunds] EvmError: OutOfFunds
+    └─ ← [Stop]
+
+
+Transaction successfully executed.
+Gas used: 30263
+Executing previous transactions from the block.
+Traces:
+  [44764] 0x2C02D36a9fDeaC5c8919D48a1a7DAA2B22af9557::add(0x75aaaFfD9EAA33a86d36b6Bd6c6b41C4eE868D69)
+    └─ ← [Stop]
+
+
+Transaction successfully executed.
+Gas used: 66196
+Executing previous transactions from the block.
+Traces:
+  [23288] 0x2C02D36a9fDeaC5c8919D48a1a7DAA2B22af9557::fallback{value: 600000000000000}()
+    ├─ [2577] 0x0000E23aBdC862a1911d77904e77Fdb378D00000::nativeCryptoReceiver()
+    │   └─ ← [Return] 0x000000000000000000000000000037bb05b2cef17c6469f4bcdb198826ce0000
+    ├─ [55] 0x000037bB05B2CeF17c6469f4BcDb198826Ce0000::fallback{value: 600000000000000}()
+    │   └─ ← [Stop]
+    ├─  emit topic 0: 0xfceb437c298f40d64702ac26411b2316e79f3c28ffa60edfc891ad4fc8ab82ca
+    │           data: 0x00000000000000000000000075aaaffd9eaa33a86d36b6bd6c6b41c4ee868d69000000000000000000000000000000000000000000000000000221b262dd8000
+    └─ ← [Stop]
+
+
+Transaction successfully executed.
+Gas used: 44288
+
+

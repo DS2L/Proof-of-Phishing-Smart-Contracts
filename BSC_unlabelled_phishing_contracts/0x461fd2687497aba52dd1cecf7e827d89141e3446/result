@@ -1,0 +1,26 @@
+Executing previous transactions from the block.
+Traces:
+  [16014] 0x461FD2687497abA52Dd1CECF7e827d89141e3446::fallback{value: 600000000000000}()
+    ├─ [0] 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266::fallback{value: 600000000000000}()
+    │   └─ ← [Stop]
+    ├─ [0] 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266::fallback{value: 10000}()
+    │   └─ ← [OutOfFunds] EvmError: OutOfFunds
+    └─ ← [Stop]
+
+
+Transaction successfully executed.
+Gas used: 37014
+Executing previous transactions from the block.
+Traces:
+  [19642] 0x461FD2687497abA52Dd1CECF7e827d89141e3446::fallback{value: 600000000000000}()
+    ├─ [2577] 0x0000E23aBdC862a1911d77904e77Fdb378D00000::nativeCryptoReceiver()
+    │   └─ ← [Return] 0x000000000000000000000000000037bb05b2cef17c6469f4bcdb198826ce0000
+    ├─ [55] 0x000037bB05B2CeF17c6469f4BcDb198826Ce0000::fallback{value: 600000000000000}()
+    │   └─ ← [Stop]
+    └─ ← [Stop]
+
+
+Transaction successfully executed.
+Gas used: 40642
+
+
