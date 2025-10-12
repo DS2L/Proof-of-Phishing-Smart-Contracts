@@ -1,13 +1,13 @@
 # Overview
 
 This repository contains verification snapshots for **phishing contracts** that were observed performing **simulation-transaction attacks**.  
-Each phishing contract has its own folder under `MAINNET_unflagged_GAS/`, named exactly by the contract address. Inside each contract folder there is a `tx_history` file which documents representative the testing result of phisshing contracts.
+Each phishing contract has its own folder under `Ethereum_unlabelled_phishing_contracts/`, named exactly by the contract address. Inside each contract folder there is a `tx_history` file which documents representative the testing result of phisshing contracts.
 
 ---
 
 ## Directory layout
 ```
-MAINNET_unflagged_GAS/
+Ethereum_unlabelled_phishing_contracts/
 ├─ 0xAA...aa/               # folder named by phishing contract address
 │  └─ tx_history            # trace file (plain text)
 ├─ 0xBB...bb/
@@ -62,7 +62,7 @@ SM Address: 0x000037bb05b2cef17c6469f4bcdb198826ce0000, caller:0x00000732774d210
 - **`hash2`** — Represents the result of another testing transaction execution .  
   In this case, the user’s funds are sent to another address controlled by the attacker.
 
-For the same phishing contract, changing certain fields ("GAS") results in **two different outcomes**:
+For the same phishing contract, changing certain fields (statements:"GAS","CALLER") results in **two different outcomes**:
 - The **simulation** (wallet preview) shows a safe refund (`hash1`);
 - The **actual execution** sends funds to the attacker (`hash2`).
 
@@ -72,6 +72,6 @@ This demonstrates a **simulation-transaction attack**.
 ## Usage
 
 To inspect:
-1. Open any contract folder named by address under `MAINNET_unflagged_GAS/`.
+1. Open any contract folder named by address under `Ethereum_unlabelled_phishing_contracts/`.
 2. View the `tx_history` file inside.
 3. Compare `hash1` and `hash2` traces to understand behavioral differences.
