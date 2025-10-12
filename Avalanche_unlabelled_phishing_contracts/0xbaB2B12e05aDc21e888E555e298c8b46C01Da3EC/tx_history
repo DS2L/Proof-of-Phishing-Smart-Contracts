@@ -1,4 +1,4 @@
-hash1
+Testing transaction 1: the transaction sender will receive back more than the deposited amount.
 
 SM Address: 0xbab2b12e05adc21e888e555e298c8b46c01da3ec, caller:0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266,target:0xbab2b12e05adc21e888e555e298c8b46c01da3ec is_static:false, transfer:Transfer(600000000000000), input_size:0
 
@@ -7,7 +7,7 @@ SM Address: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266, caller:0xbab2b12e05adc21
 SM Address: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266, caller:0xbab2b12e05adc21e888e555e298c8b46c01da3ec,target:0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266 is_static:false, transfer:Transfer(10000), input_size:0
 
 
-hash2
+Testing transaction 2: the transaction sender's deposits are moved to another address undet the attackers' control.
 
 SM Address: 0xbab2b12e05adc21e888e555e298c8b46c01da3ec, caller:0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266,target:0xbab2b12e05adc21e888e555e298c8b46c01da3ec is_static:false, transfer:Transfer(600000000000000), input_size:0
 
