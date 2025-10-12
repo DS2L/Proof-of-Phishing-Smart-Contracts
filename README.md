@@ -18,13 +18,13 @@ Ethereum_unlabelled_phishing_contracts/
 ---
 ## `tx_history` file format
 
-Each `tx_history` file contains two example hashes (referred as `hash1` and `hash2` in this dataset).  
+Each `tx_history` file contains two example hashes (referred as `Testing transaction 1` and `Testing transaction 2` in this dataset).  
 Under each hash, there is a sequence of smart-contract-level state messages (SM) observed in our verification result.
 
 ### Example
 
 ```
-hash1
+Testing transaction 1: the transaction sender will receive back more than the deposited amount.
 
 SM Address: 0x00000732774d2109e1203f7b583d9551cad30000, caller:0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266,target:0x00000732774d2109e1203f7b583d9551cad30000 is_static:false, transfer:Transfer(600000000000000), input_size:0
 
@@ -32,13 +32,15 @@ SM Address: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266, caller:0x00000732774d210
 
 SM Address: 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266, caller:0x00000732774d2109e1203f7b583d9551cad30000,target:0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266 is_static:false, transfer:Transfer(10000), input_size:0
 
-hash2
+
+Testing transaction 2: the transaction sender's deposits are moved to another address undet the attackers' control.
 
 SM Address: 0x00000732774d2109e1203f7b583d9551cad30000, caller:0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266,target:0x00000732774d2109e1203f7b583d9551cad30000 is_static:false, transfer:Transfer(600000000000000), input_size:0
 
 SM Address: 0x0000e23abdc862a1911d77904e77fdb378d00000, caller:0x00000732774d2109e1203f7b583d9551cad30000,target:0x0000e23abdc862a1911d77904e77fdb378d00000 is_static:false, transfer:Transfer(0), input_size:4
 
 SM Address: 0x000037bb05b2cef17c6469f4bcdb198826ce0000, caller:0x00000732774d2109e1203f7b583d9551cad30000,target:0x000037bb05b2cef17c6469f4bcdb198826ce0000 is_static:false, transfer:Transfer(600000000000000), input_size:0
+
 ```
 ---
 
@@ -54,17 +56,17 @@ SM Address: 0x000037bb05b2cef17c6469f4bcdb198826ce0000, caller:0x00000732774d210
 | **input_size** | Size (bytes) of calldata for this call. |
 
 ---
-## Meanings of `hash1` and `hash2`
+## Meanings of `Testing transaction 1` and `Testing transaction 2`
 
-- **`hash1`** — Represents the result of a testing transaction execution.
+- **`Testing transaction 1`** — Represents the result of a testing transaction execution.
   In this testing transaction, the contract returns the user’s transferred funds and adds `10000 wei` extra back to the user.
 
-- **`hash2`** — Represents the result of another testing transaction execution .  
+- **`Testing transaction 2`** — Represents the result of another testing transaction execution .  
   In this case, the user’s funds are sent to another address controlled by the attacker.
 
 For the same phishing contract, changing certain fields (statements:"GAS","CALLER") results in **two different outcomes**:
-- The **simulation** (wallet preview) shows a safe refund (`hash1`);
-- The **actual execution** sends funds to the attacker (`hash2`).
+- The **simulation** (wallet preview) shows a safe refund (`Testing transaction 1`);
+- The **actual execution** sends funds to the attacker (`Testing transaction 2`).
 
 This demonstrates a **simulation-transaction attack**.
 
@@ -74,7 +76,7 @@ This demonstrates a **simulation-transaction attack**.
 To inspect:
 1. Open any contract folder named by address under `Ethereum_unlabelled_phishing_contracts/`.
 2. View the `tx_history` file inside.
-3. Compare `hash1` and `hash2` traces to understand behavioral differences.
+3. Compare `Testing transaction 1` and `Testing transaction 2` traces to understand behavioral differences.
 
 ## Additional Verification Notice:
 All phishing contract addresses listed in this repository have been manually verified on Etherscan, BscScan, PolygonScan, and SnowTrace (Avalanche C-Chain). 
