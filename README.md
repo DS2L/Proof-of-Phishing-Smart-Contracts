@@ -1,7 +1,7 @@
 # Overview
 
-This repository contains verification snapshots for **phishing contracts** that were observed performing **simulation-transaction attacks**.  
-Each phishing contract has its own folder under `Ethereum_unlabelled_phishing_contracts/`, named exactly by the contract address. Inside each contract folder there is a `tx_history` file which documents representative the testing result of phisshing contracts.
+This repository contains verification snapshots for **phishing contracts** that were observed performing **transaction simulation phishing attacks**.  
+Each phishing contract has its own folder under `Ethereum_unlabelled_phishing_contracts/`, named by the contract address. Inside each contract folder, there is a `tx_history` file which documents our testing result of phishing contracts.
 
 ---
 
@@ -18,8 +18,8 @@ Ethereum_unlabelled_phishing_contracts/
 ---
 ## `tx_history` file format
 
-Each `tx_history` file contains two example hashes (called `hash1` and `hash2` in this dataset).  
-Each hash section lists the sequence of smart-contract-level state messages (SM) observed in the verification.
+Each `tx_history` file contains two example hashes (referred as `hash1` and `hash2` in this dataset).  
+Under each hash, there is a sequence of smart-contract-level state messages (SM) observed in our verification result.
 
 ### Example
 
@@ -54,7 +54,7 @@ SM Address: 0x000037bb05b2cef17c6469f4bcdb198826ce0000, caller:0x00000732774d210
 | **input_size** | Size (bytes) of calldata for this call. |
 
 ---
-## Meaning of `hash1` and `hash2`
+## Meanings of `hash1` and `hash2`
 
 - **`hash1`** — Represents the result of a testing transaction execution.
   In this testing transaction, the contract returns the user’s transferred funds and adds `10000 wei` extra back to the user.
