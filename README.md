@@ -79,8 +79,8 @@ To inspect:
 3. Compare `Testing transaction 1` and `Testing transaction 2` traces to understand behavioral differences.
 
 ## Additional Verification Notice:
-All phishing contract addresses listed in this repository have been manually verified on Etherscan, BscScan, PolygonScan, and SnowTrace (Avalanche C-Chain). 
-Verification involved analyzing:
+We have manually verified all phishing contract addresses listed in this repository. 
+Our verification involved analyzing:
 1. The sources and destinations of funds associated with each contract;
 2. The historical activities of the deployer addresses;
 3. Behavioral patterns such as mass airdrops, malicious transfers, or repeated phishing-linked transactions.
