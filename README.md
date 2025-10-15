@@ -1,6 +1,6 @@
 # Overview
 
-This repository contains verification snapshots for **phishing contracts** that were observed performing **transaction simulation phishing attacks**.  
+This repository contains verification snapshots for **phishing contracts** that were observed performing **phishing attacks against crypto wallet users**.  
 Each phishing contract has its own folder under `Ethereum_unlabelled_phishing_contracts/`, named by the contract address. Inside each contract folder, there is a `tx_history` file which documents our testing result of phishing contracts.
 
 ---
